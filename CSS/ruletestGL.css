@@ -1,0 +1,97 @@
+*{
+    font-family: 'Poppins', sans-serif, 'Nunito';
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+  z-index: 1;
+}
+
+*::-webkit-scrollbar-track {
+  background: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  border: 3px solid #F6F6F6;
+}
+
+*::-webkit-resizer{
+   display: none;
+}
+
+ul{
+    padding: 0;
+}
+
+a{
+    color: rgba(32, 32, 32, 0.5);
+}
+
+a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+body{
+    background: #1D1D42!important;
+}
+.flt{
+    overflow: auto;
+    position: absolute;
+    z-index: 1;
+    margin-top: 173px;
+}
+.content{
+    position: relative;
+    z-index: 2;
+}
+.back{
+    color: white;
+}
+.back:hover{
+    color: #6FCF97;
+}
+h3{
+    font-weight: 600;
+    font-size: calc(32px - 30%);
+    line-height: 48px;
+    color: #6FCF97;
+}
+.text-box{
+    width: 478px;
+    height: 188px;
+}
+.q{
+    font-size: calc(20px - 30%);
+    line-height: 30px;
+    color: white;
+}
+.p{
+    margin-top: 120px;
+}
+.t{
+    margin-top: 88px;
+}
+
+.tombol{
+    width: 242px;
+    height: 64px;
+    background: #26264E;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 2;
+    position: relative;
+}
+
+.tombol:hover{
+    color: #26264E;
+    background: #FFFFFF;
+}
