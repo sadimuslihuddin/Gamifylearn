@@ -13,7 +13,7 @@ $("#bell").on('click', function(e){
     });
 
 $(document).ready(function(){
-    if ($(".foto-profil-main img[src=='']")).{
+        if($(".foto-profil").attr('src')=='').{
           $(".foto-profil")).addClass("disappear");
         }else{
           $(".foto-profil")).removeClass("disappear");
