@@ -16,3 +16,8 @@ $("#bell").on('click', function(e){
         $('.foto-profil[src=""]').hide();
         $('.foto-profil:not([src=""])').show();
     });
+
+$(document).ready(function(){
+        $('.foto-profil-edit[src=""]').hide();
+        $('.foto-profil-edit:not([src=""])').show();
+    });
