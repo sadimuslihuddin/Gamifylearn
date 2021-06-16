@@ -11,3 +11,11 @@ $("#bell").on('click', function(e){
             $("#bell .badge").addClass("disappear");
         }else{$("#bell .badge").removeClass("disappear")}
     });
+
+$(document).ready(function(){
+    if ($(".foto-profil-main img[src=='']")).{
+          $(".foto-profil")).addClass("disappear");
+        }else{
+          $(".foto-profil")).removeClass("disappear");
+        };
+});
