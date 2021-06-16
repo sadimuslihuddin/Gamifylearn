@@ -12,10 +12,7 @@ $("#bell").on('click', function(e){
         }else{$("#bell .badge").removeClass("disappear")}
     });
 
-$(document).ready(function(){
-        if($(".foto-profil").attr('src')=='').{
-          $(".foto-profil")).addClass("disappear");
-        }else{
-          $(".foto-profil")).removeClass("disappear");
-        };
-});
+ $(document).ready(function(){
+        $('.foto-profil[src=""]').hide();
+        $('.foto-profil:not([src=""])').show();
+    });
