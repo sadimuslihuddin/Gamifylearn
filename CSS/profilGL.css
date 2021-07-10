@@ -1,0 +1,118 @@
+.mt-25{
+    margin-top: 25px;
+}
+.foto-profil-edit-main{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: gray;
+}
+.foto-profil-edit{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.edit-foto{
+    position: absolute;
+    background: #141432;
+    border-radius: 100%;
+    color: white;
+    padding: 8px;
+    margin-left: 30px;
+    margin-top: -35px;
+}
+
+.edit-foto:hover{
+    background: #2E2E4C;
+}
+
+.nama-profil{
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.email-profil{
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.input-text{
+    width: 375px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid rgba(53, 71, 90, 0.2);
+    border-radius: 4px;
+    padding: 0px 16px
+}
+
+.cancel-btn, .save-btn, .edit-btn{
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.save-btn{
+    background: #7D2AE8;
+}
+
+.save-btn:hover{
+    background: #6411CF;
+}
+
+.cancel-btn, .edit-btn{
+    background: #323267;
+}
+
+.cancel-btn:hover, .edit-btn:hover{
+    background: #25255A;
+}
+
+.line{
+    width: 750px;
+    height: 1px;
+    background: rgba(50, 50, 103, 0.5);
+}
+
+.title, .isi{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+.disappear{
+    display: none;
+}
+
+.file-upload {
+    display: none;
+}
+
+@media only screen and (max-width: 425px){
+    .line, .input-text{
+        width: 100%!important;
+    }
+    .content{
+        margin-top: 100px!important;
+    }
+    .data-input{
+        text-align: right!important;
+    }
+    .data-input button{
+        margin-top: 8px!important;
+    }
+}
+

@@ -1,0 +1,58 @@
+.table-responsive{
+    width: 676px;
+}
+.table{
+    background-color: white;
+    border-radius: 10px;
+    border-top: none;
+}
+.dataTables_wrapper{
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.dataTables_wrapper .form-control{
+    background: white;
+}
+thead tr{
+    background: white;
+    color: rgba(0, 0, 0, 0.5);
+}
+thead tr th{
+    font-weight: 600;
+}
+tbody tr:nth-child(odd) {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #000000;
+}
+/*background color for all the EVEN background rows  */
+tbody tr:nth-child(even) {
+    background: white;
+}
+.page-item.active .page-link{
+    background: #323267;
+    border-color: #323267;
+}
+@media only screen and (max-width: 425px){
+    .col-sm-12{
+        overflow-y: hidden;
+        overflow-x: scroll;
+    }
+    .col-sm-12::-webkit-scrollbar {
+      width: 15px;
+      z-index: 1;
+    }
+
+    .col-sm-12::-webkit-scrollbar-track {
+      background: none;
+    }
+
+    .col-sm-12::-webkit-scrollbar-thumb {
+      background-color: #1D1D42;
+      border-radius: 20px;
+      border: 5px solid white;
+    }
+
+    .col-sm-12::-webkit-resizer{
+       display: none;
+    }
+}

@@ -1,0 +1,325 @@
+*{
+    font-family: 'DM Sans';
+}
+
+.navbar-light{
+    background: white;
+}
+.navbar-nav {
+    margin: 150px auto 0;
+    padding: 0;
+    list-style: none;
+  }
+.nav-item {
+    position: relative;
+}
+.nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    background: var(--nav-link-line, #000);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+  }
+.content .capt-1{
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #1D293F;
+    margin-top: 180px;
+}
+.content h1.capt-1{
+    text-align: center;
+    font-size: 58px;
+    line-height: 64px;
+}
+.content h2.capt-1{
+    text-align: left;
+    font-size: 46px;
+    line-height: 65px;
+}
+
+.content .subcapt-1{
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+    color: #7C8087;
+}
+
+.content .subcapt-1-2{
+    font-size: 18px;
+    line-height: 32px;
+    color: #7C8087;
+    margin-bottom: 38px;
+}
+
+.content .col-12 .btn-primary{
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.content .col-12 .btn-primary:hover{
+    background: #0F53FA;
+}
+
+.content .container .item-1{
+    background: #F7F8FA;
+    border-radius: 10px;
+    width: 350px;
+    padding: 19px;
+    align-self: flex-start;
+    height: auto;
+}
+
+.content .container .icon-1-2{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #F2F4F7;
+}
+
+.content .container .icon-1 i{
+    font-size: 24px;
+    color: #0F53FA;
+}
+
+.content .fas{
+    color: #0F53FA;
+}
+
+.content .container .icon-1 span{
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.content .kesan .card{
+    width: 350px;
+    height: 180px;
+    background: #FFFFFF;
+    border: 1px solid #E2E4E8;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.kesan .profile-img{
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background: url("https://picsum.photos/200");
+    margin-right: 12px;
+}
+
+.kesan .nama{
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1D293F;
+}
+
+.kesan .fakultas{
+    font-family: DM Sans;
+    font-size: 13px;
+    color: #7C8087;
+}
+
+.kesan .caption{
+    font-family: DM Sans;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7C8087;
+    margin-top: 14px;
+}
+
+.content .card-price, .content .card-price-dark{
+    width: 350px;
+    height: 580px;
+    border-radius: 20px;
+    padding: 30px 22px;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.content .card-price{
+    background: #FFFFFF;
+    margin-top: 30px;
+}
+
+.content .card-price-dark{
+    background: linear-gradient(360deg, rgba(82, 67, 194, 0) -49.8%, #5243C2 89.86%);
+}
+
+.content .card-price h1, .content .card-price-dark h1{
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+.content .card-price h1{
+    color: #4031B3;
+}
+
+.content .card-price-dark h1{
+    color: white;
+}
+
+.content .card-price-dark .label{
+    padding: 8px 16px;
+    background: #4031B3;
+    border-radius: 50px;
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #F7B5DF;
+    position: absolute;
+    margin-left: 185px;
+}
+
+.content .card-price .price, .content .card-price-dark .price{
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 30px;
+    color: #F287CB;
+}
+
+.content .card-price .month, .content .card-price-dark .month{
+    font-family: DM Sans;
+    font-size: 20px;
+    color: #F287CB;
+}
+
+.content .card-price .paket, .content .card-price-dark .paket{
+    font-family: DM Sans;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.content .card-price .paket{
+    color: #4031B3;
+}
+
+.content .card-price-dark .paket{
+    color: white;
+}
+
+.content .card-price .list, .content .card-price-dark .list{
+    font-family: DM Sans;
+    font-size: 18px;
+    line-height: 23px;
+    color: #4031B3;
+    margin-top: 10px;
+}
+
+.content .card-price-dark .list{
+    color: white;
+}
+
+.content .card-price .btn, .content .card-price-dark .btn{
+    width: 306px;
+    height: 45px;
+    background: #5343CC;
+    border-radius: 24px;
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    border:none;
+}
+
+.content .btn:focus{
+    outline: none;
+}
+
+.subcapt-footer{
+    font-size: 16px;
+    line-height: 28px;
+    color: #8C97AC;
+}
+
+li{
+    list-style-type: none;
+}
+
+hr.solid{
+    border: 1px solid #313D55;
+}
+
+.sosmed a{
+    background: #23324D;
+    height: 40px;
+    width: 40px;
+    justify-content: center;
+    display: flex;
+    border-radius: 50%;
+    margin-right: 16px;
+    color: white;
+}
+
+.sosmed a:hover{
+    text-decoration: none;
+    color: #FFD166;
+}
+
+.sosmed .fab{
+    font-size: 25px;
+    align-self: center;
+}
+
+@media only screen and (max-width: 425px){
+    .content.d-flex{
+        display: block!important;
+        width: 100%!important;
+    }
+    .capt-1{
+        font-size: 32px!important;
+        line-height: 44px!important;
+    }
+    .subcapt-1{
+        font-size: 16px!important;
+        line-height: 24px!important;
+    }
+    .daftarbtn{
+        margin-bottom: 30px!important;
+    }
+    .threeitem{
+        display: block!important;
+    }
+    .threeitem .item-1{
+        width: 90%!important;
+        margin-top: 16px!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .container .capt-1{
+        margin-top: 55px!important;
+    }
+    .card-price-dark{
+        margin-top: 30px!important;
+    }
+    ul{
+        padding-left: 0px!important;
+    }
+    p.subcapt-footer{
+        line-height: 32px!important;
+    }
+    .nav-item{
+        justify-content: center;
+    }
+    #nav-btn{
+        margin-bottom: 20px!important;
+        margin-top: 10px!important;
+        width: 100%!important;
+    }
+}

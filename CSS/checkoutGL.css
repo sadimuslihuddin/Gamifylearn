@@ -1,0 +1,201 @@
+.table{
+    background-color: white;
+    border-radius: 10px;
+    border-top: none;
+}
+thead tr{
+    background: white;
+    color: rgba(0, 0, 0, 0.5);
+}
+thead tr th{
+    font-weight: 600;
+    padding: 16px!important;
+}
+tbody tr td{
+    padding: 16px!important;
+}
+tbody tr:nth-child(odd) {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #000000;
+}
+/*background color for all the EVEN background rows  */
+tbody tr:nth-child(even) {
+    background: white;
+}
+.page-item.active .page-link{
+    background: #323267;
+    border-color: #323267;
+}
+table th:first-child{
+    border-top-left-radius: 10px;
+}
+table th:last-child{
+    border-top-right-radius: 10px;
+}
+table tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+table tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+
+.payment{
+    width: 675px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.payment .AN, .payment .noRek, .payment .ket{
+    font-family: DM Sans;
+    line-height: 16px;
+    margin-top: 14px;
+}
+.payment .AN, .payment .noRek{
+    font-size: 20px;
+}
+.payment .noRek{
+    font-weight: bold;
+}
+.payment .ket{
+    font-size: 16px;
+}
+.container-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkText{
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+button.confirm{
+    width: 212px;
+    height: 47px;
+    background: #C7C7C7;
+    border-radius: 4px;
+    border:none;
+    font-family: DM Sans;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+button.confirm.aktif{
+    background: #3493FE;
+}
+
+button.confirm.aktif:hover{
+    background: #0160CB;
+}
+
+@media only screen and (max-width: 425px){
+    .table-responsive::-webkit-scrollbar {
+      width: 15px;
+      z-index: 1;
+    }
+
+    .table-responsive::-webkit-scrollbar-track {
+      background: none;
+    }
+
+    .table-responsive::-webkit-scrollbar-thumb {
+      background-color: white;
+      border-radius: 20px;
+      border: 5px solid #1D1D42;
+    }
+
+    .table-responsive::-webkit-resizer{
+       display: none;
+    }
+    .main-content h4{
+        font-size: 24px!important;
+    }
+    .payment, button.confirm{
+        width: 100%!important;
+    }
+    .payment .AN{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .payment .noRek{
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .payment .ket{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    form .checkText{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    form.d-flex{
+        display: block!important;
+    }
+}

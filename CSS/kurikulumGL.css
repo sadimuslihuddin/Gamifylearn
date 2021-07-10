@@ -1,0 +1,107 @@
+.bullet-title{
+    width: 6px;
+    height: 30px;
+    background: #3493FE;
+    border-radius: 0px 4px 4px 0px;
+}
+.b-title{
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+.subbab{
+    width: 844px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+.subbab:hover{
+    background: rgba(0, 0, 0, 0.4);
+}
+.subbab .subbab-capt{
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.now .subbab{
+    background: #E1EFFF;
+}
+.now .subbab:hover{
+    background: white;
+}
+.now .subbab .subbab-capt{
+    color: #0178FE;
+}
+.lock .subbab{
+    background: rgba(107, 127, 153, 0.1);
+}
+
+/*cheatsheet*/
+.ch .download{
+    background: #323267;
+}
+
+.ch .download{
+    font-family: DM Sans;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.ch .dropdown-menu{
+    width: 140px;
+    background: rgba(50, 50, 103, 0.6);
+    backdrop-filter: blur(15px);
+    border-radius: 4px;
+    margin-left: -30px;
+}
+
+.ch .dropdown-menu .dropdown-item:hover{
+    background: rgba(50, 50, 103, 0.8)
+}
+
+.ch .dropdown-menu span{
+    color: white;
+    font-family: DM Sans;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.panel{
+    width: 892.5px;
+    height: 1263px;
+    background: white;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 425px){
+    .subbab{
+        width: 100%;
+    }
+    .subbab-capt{
+        width: 80%!important;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .content{
+        margin-top: 100px!important;
+    }
+    .path a, .path p{
+        font-size: 14px!important;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+    }
+    .b-title{
+        font-size: 20px!important;
+    }
+    .panel{
+        width: 100%!important;
+    }
+}
+
