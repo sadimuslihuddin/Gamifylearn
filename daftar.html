@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - Gamifythink</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="CSS/daftar.css">
+    <script src="JS/daftar.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+</head>
+<body>
+    <div class="content d-flex">
+        <div class="container trophy px-0" style="background: #1D1D42;width:50%;">
+            <div class="row ml-3 px-0">
+                <div class="col-12 mt-3">
+                    <img src="assets/gamifylearn 2.png">
+                </div>
+                <div class="col-12 text-center mt-5">
+                    <img class="mt-5" src="assets/Ilustrasi 1 1.png">
+                </div>
+                <div class="col-12 text-center mt-5 mb-5">
+                    <h1 class="capt">What didn’t kill you make you stronger</h1>
+                    <p class="subcapt">- Seminar Motivasi ITB -</p>
+                </div>
+            </div>
+        </div>
+        <div class="container px-0" style="max-width:50%;margin-left:50%;">
+            <a class="black-logo d-none" href="index.html">
+                <img src="assets/gamifylearn logo black 1.png">
+            </a>
+            <div class="back-div mt-3 ml-4">
+                <a class="back" href="index.html"><i class="fa fa-chevron-left mr-3"></i>Back</a>
+            </div>
+            <div class="row px-5">
+                <div class="col ml-5 my-4">
+                    <h1 class="capt-2">Sign Up</h1>
+                    <p class="subcapt-2">Daftarkan akunmu, dan gunakan gamifythink learn untuk meraih nilai yang lebih baik di TPB</p>
+                    <div class="capt-ask d-flex">
+                        <div class="mr-2">Sudah punya akun?</div>
+                        <a href="login.html">login disini</a>
+                    </div>
+                </div>
+                <form class="col-12 ml-5 mb-3">
+                    <div>
+                        <p>Nama*</p>
+                        <div>
+                            <input type="text" class="input" minlength="5" maxlength="20" placeholder="Masukkan Nama">
+                        </div>
+                        <p class="warn mt-1">*Nama sudah digunakan</p>
+                    </div>
+                    <div class="mt-3">
+                        <p>Alamat Email*</p>
+                        <div>
+                            <input type="email" class="input" minlength="5" placeholder="Masukkan alamat email disini">
+                        </div>
+                        <p class="warn mt-1">*Alamat Email sudah digunakan</p>
+                    </div>
+                    <div class="mt-3">
+                        <p>Asal Universitas*</p>
+                        <label class="selectdiv">
+                            <select id="universitas" type="text" class="input">
+                                <option value="" disabled selected>Pilih Universitas</option>
+                                <option value="ITB">Institut Teknologi Bandung</option>
+                                <option value="UI">Universitas Indonesia</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="mt-3">
+                        <p>Fakultas</p>
+                        <label class="selectdiv">
+                            <select id="fakultas" type="text" class="input">
+                                <option value="" disabled selected>Pilih Fakultas</option>
+                                <option value="FMIPA">FMIPA</option>
+                                <option value="STEI">STEI</option>
+                                <option value="lain">Lainnya</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="mt-3">
+                        <p>Password*</p>
+                        <div class="passdiv">
+                            <input id="show" type="password" class="input" minlength="5" maxlength="20" placeholder="Masukkan password">
+                            <span onclick="show()">Show</span>
+                        </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <label class="checkdiv">
+                            <input id="check" class="check" onclick="cek()" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p class="capt">Saya setuju dengan ketentuan yang berlaku</p>
+                    </div>
+                    <div class="mt-3">
+                        <button id="signup" class="signup" type="submit" formaction="login.html">Sign up</button>
+                    </div>
+                </form>
+                <div class="col ml-5 batas-or d-flex align-items-center mb-3">
+                    <div class="line"></div>
+                    <div class="mx-30">Or</div>
+                    <div class="line"></div>
+                </div>
+                <div class="col ml-5 mb-5">
+                    <div>
+                        <button class="signupgoogle" type="submit" formaction="#"><img class="mr-3" src="assets/flat-color-icons_google.svg">Sign up with Google</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function show() {
+          var x = document.getElementById("show");
+          if (x.type === "password") {
+            x.type = "text";
+          } else {
+            x.type = "password";
+          }
+        }
+    </script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+</body>
+</html>
