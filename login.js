@@ -7,7 +7,7 @@ $(document).ready(function(){
 
         $.ajax({
             type: "POST",
-            url: "data.json",
+            url: "https://github.com/sadimuslihuddin/Gamifylearn/data.json",
             dataType: "json",
             success: function(data){
                 $.each(data,function(key,value){
